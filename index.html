@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Pac-Man</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo ao Mundo de Pac-Man</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button id="changeColorBtn">Mudar Cor de Fundo</button>
+    <script>
+        function getRandomCollor() {
+            const red = 255;
+            const green = Math.floor(Math.random() * 156) + 150;
+            const blue = 0;
+    
+            return `rgb(${red}, ${green}, ${blue})`;
+        }
+    
+        document.getElementById('changeColorBtn').addEventListener('click', function () {
+            document.body.style.backgroundColor = getRandomCollor();
+        });
+    </script>
+    <section>
+        <p>Pac-Man é um dos jogos mais icônicos de todos os tempos. Explore mais sobre o jogo navegando em nossas
+            páginas!
+        </p>
+    </section>
+</body>
+
+</html>

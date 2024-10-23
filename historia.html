@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do Pac-Man</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>A História do Pac-Man</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <button id="toggleTextBtn">Esconder</button>
+    
+  
+    <section id="textToToggle">
+        <h2>O Nascimento de Pac-Man</h2>
+        <p>Pac-Man foi criado em 1980 por Toru Iwatani, um jovem designer de jogos da Namco (atual Bandai Namco). Segundo Iwatani, a ideia do jogo surgiu enquanto ele comia uma pizza. Ao retirar uma fatia, ele percebeu que o formato restante lembrava uma boca aberta, o que o inspirou a criar o personagem principal.</p>
+
+        <p>O desenvolvimento de Pac-Man levou cerca de um ano, com uma pequena equipe de apenas nove pessoas. O objetivo de Iwatani era criar um jogo que fosse diferente dos populares jogos de tiro da época, como "Space Invaders", e que pudesse atrair um público mais amplo, especialmente mulheres e crianças. Ele queria que Pac-Man tivesse uma jogabilidade simples, mas ao mesmo tempo desafiadora, baseada na ideia de "comer" e evitar fantasmas.</p>
+
+        <h2>O Sucesso Global</h2>
+        <p>Pac-Man foi lançado pela primeira vez no Japão em maio de 1980, com o nome original de "Puck Man". No entanto, ao ser lançado nos Estados Unidos, o nome foi alterado para "Pac-Man" para evitar vandalismos nas máquinas de arcade, já que a troca de uma letra poderia transformar "Puck" em uma palavra obscena em inglês. O jogo rapidamente se tornou um fenômeno mundial, popularizando o conceito de "labirinto" nos jogos e ganhando o coração de milhões de jogadores.</p>
+
+        <h2>Impacto Cultural e Legado</h2>
+        <p>Pac-Man não foi apenas um jogo divertido, mas também revolucionou a indústria dos jogos eletrônicos. Ele introduziu conceitos inovadores, como inteligência artificial para os fantasmas, cada um com sua própria personalidade e padrão de comportamento. Blinky persegue Pac-Man diretamente, enquanto Pinky e Inky tentam emboscar o jogador, e Clyde é mais imprevisível.</p>
+
+        <p>Ao longo das décadas, Pac-Man permaneceu relevante, com inúmeras sequências, remakes e aparições em outros jogos e mídias. Em 2010, o jogo original foi introduzido no Guinness World Records como o "jogo de arcade de maior sucesso de todos os tempos", com mais de 293.000 máquinas vendidas em todo o mundo desde seu lançamento.</p>
+    </section>
+
+
+    <script>
+        const textToToggle = document.getElementById('textToToggle');
+        const toggleTextBtn = document.getElementById('toggleTextBtn');
+
+        toggleTextBtn.addEventListener('click', function() {
+            if (textToToggle.style.display === 'none') {
+                textToToggle.style.display = 'block';
+                toggleTextBtn.textContent = 'Esconder';
+            } else {
+                textToToggle.style.display = 'none';
+                toggleTextBtn.textContent = 'Mostrar';
+            }
+        });
+    </script>
+</body>
+</html>

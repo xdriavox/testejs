@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades e Recordes do Pac-Man</title>
+
+    <style>
+        #square {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(255, 255, 0);
+        position: absolute;
+        top: 320px;
+        left: 350px;
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <h1>Curiosidades e Recordes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="personagens.html">Personagens</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>História do Pac-Man</h2>
+        <p>Pac-Man foi criado em 1980 por Toru Iwatani e rapidamente se tornou um sucesso global. O jogo é simples, mas desafiador, e capturou a imaginação de jogadores em todo o mundo.</p>
+        <p>O objetivo do jogo é controlar o Pac-Man através de um labirinto, comer todas as bolinhas e evitar os fantasmas. Pac-Man se tornou um ícone da cultura pop e influenciou inúmeros jogos posteriores.</p>
+        <p>Você sabia que Pac-Man tem um padrão de "tela de morte" no nível 256? Além disso, o recorde mundial de pontuação é superior a 3 milhões de pontos!</p>
+    </section>
+
+    <section>
+        <h2>Curiosidades sobre Pac-Man</h2>
+        <ul>
+            <li>O jogo foi originalmente chamado de "Puck Man", mas o nome foi alterado para "Pac-Man" para evitar vandalismo nos fliperamas.</li>
+            <li>Pac-Man foi um dos primeiros jogos a apresentar personagens com personalidades distintas, como Blinky, Pinky, Inky e Clyde.</li>
+            <li>O jogo inspirou uma série de produtos, incluindo brinquedos, roupas e uma série animada de televisão.</li>
+            <li>Pac-Man é considerado um dos maiores jogos de todos os tempos e é frequentemente classificado como um dos melhores jogos de arcade da história.</li>
+        </ul>
+    </section>
+
+    <div id="square"></div>
+
+    <script>
+        const square = document.getElementById('square');
+        let topPosition = 320;
+        let leftPosition = 350;
+        
+        document.addEventListener('keydown', function(event) {
+        const step = 10; 
+        
+        switch(event.key) {
+        case 'ArrowUp':
+        topPosition -= step;
+        break;
+        case 'ArrowDown':
+        topPosition += step;
+        break;
+        case 'ArrowLeft':
+        leftPosition -= step;
+        break;
+        case 'ArrowRight':
+        leftPosition += step;
+        break;
+        }
+        square.style.top = topPosition + 'px';
+        square.style.left = leftPosition + 'px';
+        });
+        </script>
+
+    </body>
+
+    </html>
